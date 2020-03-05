@@ -31,7 +31,7 @@ i 4990 spojrzeń na 15-to rzędową tabelkę.
 
 Cholera! Jestem programistą! Nie będę odwalac małpiej roboty w grze!
 
-3 dni roboty i jest! https://github.com/tomekbielaszewski/ugamela-galaxy-scanner
+3 dni roboty i jest! [ugamela-galaxy-scanner](https://github.com/tomekbielaszewski/ugamela-galaxy-scanner)
 
 ## Codzienność w Ogame
 Moja codzienna gra w Ogame wyglądała następująco:
@@ -43,7 +43,7 @@ Moja codzienna gra w Ogame wyglądała następująco:
 
 Nie brzmi to trochę... Małpio? Jak tylko o tym więcej pomyślałem to od razu zaswieciły mi się oczy, pojawił się chytry uśmiech
 i wziąłem się do roboty. Znowu 3 dni później miałem gotową nową zabawkę.
-https://github.com/tomekbielaszewski/ugamela-automation
+[ugamela-automation](https://github.com/tomekbielaszewski/ugamela-automation)
 
 ## Czy ja już nie umiem normalnie grać?
 Nudzę się to zaczynam grać, gra zaczyna mnie nudzić to zaczynam automatyzować, automatyzacja zabiera mi przyjemność z normalnej gry. 
