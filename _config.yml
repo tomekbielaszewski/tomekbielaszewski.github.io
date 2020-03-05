@@ -1,9 +1,11 @@
 title: Grizz-Blog
-description: "-- hack your way though the day --"
+description: "-- hack your way through the day --"
 author:
   name: "Grizz"
   email: "tomekbielaszewski@gmail.com"
   url: "https://tomekbielaszewski.github.io/"
+
+google_analytics: UA-159875271-1
 
 baseurl: /
 
