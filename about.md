@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: O mnie
 ---
 
-Something about me.
+Programista pasjonat hobbysta
