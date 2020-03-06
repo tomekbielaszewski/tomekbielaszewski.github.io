@@ -2,7 +2,7 @@
 <script>
   var disqus_config = function () {
     // https://help.disqus.com/en/articles/1717084-javascript-configuration-variables
-    this.page.url = '{{ site.author.url | append: page.id | replace: '//', '/' }}';
+    this.page.url = '{{ site.author.url }}{{ page.id | replace_first: "/", "" }}';
     this.page.identifier = '{{ page.id }}';
   };
   (function () { // DON'T EDIT BELOW THIS LINE
