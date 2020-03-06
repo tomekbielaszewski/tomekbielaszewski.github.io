@@ -1,6 +1,7 @@
 ---
 title: Nierówna walka
 published: true
+comments: true
 ---
 
 Kiedy po latach przewalania JSONów z jednego kubła w drugi dopada cię wypalenie zawodowe. Już nie możesz patrzeć na kolejne DTO,

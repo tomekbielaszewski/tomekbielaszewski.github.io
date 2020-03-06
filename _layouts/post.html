@@ -7,3 +7,8 @@ layout: default
   <time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
   {{ content }}
 </article>
+<div id="post-comments">
+  {% if page.comments %}
+  {% include comments.html %}
+  {% endif %}
+</div>
