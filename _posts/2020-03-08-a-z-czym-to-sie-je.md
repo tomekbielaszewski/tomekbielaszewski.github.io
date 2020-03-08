@@ -29,8 +29,22 @@ Po co w ogóle to wszystko? Gra ta ma w sobie pewien element. Element który wyw
 Manufacturing czyli typowy RPGowy crafting. Przerabiasz rudę na sztabki, sztabki na itemki, itemki na hajs i sławę w grze... 
 no może tylko hajs. No może nie do końca spory hajs, ale przydaje się, ok? To co mnie tu zajarało to małpia powtarzalnośc - przeciągnij 
 surowce na kowadło, kliknij przycisk, poczekaj 4sek i.. od nowa. I tak ~41'000 razy żeby wyćwiczyć 100% skilla. Zakładając,
-że przeciagnięcie surowców zajmuje 2sek, oczekiwanie na wynik zawsze trwa 4sek i mamy dostępne wszystkie surowce (nie mamy) to
-daje nam to nakład ponad 70h ciągłego "grania". W praktyce zajmie to nawet 2-3 razy tyle. To nie tylko małpia robota, to 
-czysta głupowa i szaleństwo robić to recznie.
+że przeciagnięcie surowców zajmuje 2sek (bywa różnie), oczekiwanie na wynik zawsze trwa 4sek (lag?) i mamy dostępne wszystkie 
+surowce (nie mamy) to daje nam to nakład ponad 70h ciągłego "grania". W praktyce zajmie to nawet 2-3 razy tyle. 
+To nie tylko małpia robota, to czysta głupowa i szaleństwo robić to ręcznie.
+
+Potrzebuję maszynkę która zrobi to za mnie. Jak wspomniałem - wyszła "odświeżona" wersja gry w przeglądarce, więc stare
+makra trzeba by przynajmniej przerobić, żeby dalej spełniały swoje zadanie. Ale czemu miałbym w ogóle korzystać z gotowców?
+Gdzie w tym zabawa? Zrobię to po swojemu! 
 
 # Do roboty!
+Pierwszy przedmiot jaki wytworzę to `Super Coal`. Składa się z 3x `Coal`. Wstępnie mogę przyjąć bardzo śliskie założenia:
+- Okno ekwipunku jest zawsze, co do piksela, w tym samym miejscu.
+- `Coal` znajduje się w ekwipunku i jest zawsze, co do piksela, w tym samym miejscu.
+- Zawsze mam przynajmniej 3szt. `Coal`
+- Jestem przygotowany do rozpoczęcia produkcji czyli kowadło jest otworzone
+- Kowadło jest także, co do piksela, w tym samym miejscu
+
+Bardzo ślisko, ale to i tak na razie pierwszy Proof of Concept. Narzędzie napiszę w Javie. Czemu Java? Z dwóch powodów:
+1) Klasa `Robot` która jest w stanie sterować myszką i klawiaturą
+2) Na codzień programuję w Javie, a ja jestem leniwą bułą i nie będę się do tego projektu uczył czegoś nowego
