@@ -1,5 +1,5 @@
 ---
-title: Helbreath? A co to, a na co to?
+title: Helbreath?
 published: false
 comments: true
 ---
@@ -17,6 +17,8 @@ Helbreath to koreańskie MMO RPG z roku 1999 wydane przez nieistniejącą już f
 z dużym naciskiem na skrajny grind. Setki godzin ganiania za Slimami, Skorpionami, Golemami tylko po to, żeby spędzić kolejne
 setki polując na graczy frakcji przeciwnej. W tym świecie mamy 2 miasta: Aresden i Elvine. Zasady są proste - jesteś aresem 
 i spotykasz elva? To bijesz elva. Chyba że on cie szybciej ubije to spieprzasz ile sił w nogach.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W3yz9ZxbKHQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
 
 # Ale po co to wszystko?
 Nostalgiczny powrót do HB wiąże się głównie z niedawnym wydaniem tej gry w formie przeglądarkowej. Wydał ją znany w 
@@ -52,15 +54,58 @@ Bardzo ślisko, ale to i tak na razie pierwszy Proof of Concept. Narzędzie napi
 2) Na codzień programuję w Javie, a ja jestem leniwą bułą i nie będę się do tego projektu uczył czegoś nowego
 
 Na szybko przeglądając publiczny interfejs klasy znajduję przydatne mi metody:
-- `TODO ruszanie myszką`
-- `TODO przyciśniecie przycisku myszy`
-- `TODO puszczenie przycisku myszy`
+- `mouseMove(int x, int y)`
+- `mousePress(int buttons)`
+- `mouseRelease(int buttons)`
 
 Pozwolę sobie na tym etapie nie wchodzić w szczegóły (a jakieś by były?) i zapostuję gotowca. "Bot" zadziała na ekranie HD
-gdzie gra działa w oknie Chrome'a, który to ma widoczny pasek zakładek, a pasek "start" widnowsa jest na dole i ma standardową
-wielkość. Wszystko dzięki zahardkodowanym wartościom. Nie denerwujcie się - naprawię to w kolejnym poście gdzie wreszcie 
-zrobimy coś ciekawego.
+gdzie gra działa w oknie Chrome'a, który to ma widoczny pasek zakładek, a pasek "start" Windowsa jest na dole i ma standardową
+wielkość. Wszystko to na pierwszym, głównym monitorze. Wszystko lokalizowane dzięki zahardkodowanym wartościom. Nie denerwujcie się - 
+naprawię to w kolejnym poście gdzie wreszcie zrobimy coś ciekawego.
 
+```java
+import java.awt.*;
+import java.awt.event.InputEvent;
+
+public class ManuAutomation {
+    public static void main(String[] args) throws AWTException, InterruptedException {
+        Robot robot = new Robot();
+
+        robot.mouseMove(790, 242); //mouse over SuperCoal on list
+        robot.mousePress(InputEvent.BUTTON1_DOWN_MASK); //click it
+        Thread.sleep(50);
+        robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+
+        Thread.sleep(100); //wait for anvil to open
+
+        for (int i = 0; i < 3; i++) {
+            robot.mouseMove(1051, 463); //mouse over Coal
+            robot.mousePress(InputEvent.BUTTON1_DOWN_MASK); //start dragging coal
+            robot.mouseMove(933, 407); //mouse over anvil
+            robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK); //finish dragging coal
+            
+            Thread.sleep(50);
+        }
+
+        robot.mouseMove(934, 525); //mouse over Manufacture button
+        robot.mousePress(InputEvent.BUTTON1_DOWN_MASK); //click it
+        Thread.sleep(50);
+        robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+
+        Thread.sleep(4500); //wait 4.5 sec for manufacturing to finish
+
+        robot.mouseMove(782, 526); //mouse over Back button
+        robot.mousePress(InputEvent.BUTTON1_DOWN_MASK); //click it
+        Thread.sleep(50);
+        robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+    }
+}
 ```
-KOD
-```
+
+Kod wygląda gorzej niż prostacko. Aż wstyd mi coś takiego tu postować. Brakuje obsługi błędów, wykrywania itemków i przycisków, 
+wykrywania sukcesu/faila całego procesu, wartości są zahardkodowane. Jeśli źle podałem koordynaty przycisków/itemków, to postać będzie
+tańczyć po całym magazynie (LWH - jeden z dwóch Warehouse'ów w Aresden, mamy lewy i prawy), a okna znajdą się w pseudolosowych miejscach.
+
+Ogarniemy to wszystko w kolejnych odcinkach. Ale najpierw, na rzecz powyższych usprawnień opracujmy:
+
+>> Przeszukiwanie obrazu << 
