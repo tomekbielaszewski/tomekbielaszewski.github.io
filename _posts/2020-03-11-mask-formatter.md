@@ -1,8 +1,9 @@
 ---
+author: Grizwold
 title: Java and formatting strings
 published: false
 comments: true
-tags: english, java, everydayjob
+tags: english java everyday-job
 ---
 
 # One day I found a bug

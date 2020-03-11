@@ -1,7 +1,9 @@
 ---
+author: Grizwold
 title: Helbreath?
 published: false
 comments: true
+tags: polish helbreath robot java helbreath-bot automation
 ---
 
 # Słowem wstępu

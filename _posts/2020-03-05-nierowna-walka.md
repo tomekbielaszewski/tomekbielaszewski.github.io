@@ -1,7 +1,9 @@
 ---
+author: Grizwold
 title: Nierówna walka
 published: true
 comments: true
+tags: polish hobby automation helbreath ogame
 ---
 
 Kiedy po latach przewalania JSONów z jednego kubła w drugi dopada cię wypalenie zawodowe. Już nie możesz patrzeć na kolejne DTO,
