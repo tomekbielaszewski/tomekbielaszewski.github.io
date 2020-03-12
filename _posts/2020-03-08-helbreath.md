@@ -24,8 +24,8 @@ i spotykasz elva? To bijesz elva. Chyba że on cie szybciej ubije to spieprzasz 
 Nostalgiczny powrót do HB wiąże się głównie z niedawnym wydaniem tej gry w formie przeglądarkowej. Wydał ją znany w 
 polskiej społeczności HB hacker Drajwer. Czemu hacker? Ten typ wydał Zestaw Małego Hackera i był zmorą małych prywatnych 
 serwerów. Ale nie o tym chciałem napisać.
-Po co w ogóle to wszystko? Otóż gra ta ma w sobie ten pewien mechanizm. Element który wywołuje u mnie reakcję o której pisałem  
-[wcześniej](2020-03-05-nierowna-walka.md). Jest to pewna nudna, powtarzalna czynność, która daje mi przewagę jeśli ją wypracuję.
+Po co w ogóle to wszystko? Otóż gra ta ma w sobie ten pewien mechanizm. Element który wywołuje u mnie reakcję o której pisałem [wcześniej](2020-03-05-nierowna-walka.md). 
+Jest to pewna nudna, powtarzalna czynność, która daje mi przewagę jeśli ją wypracuję.
 
 # Manu
 Manufacturing czyli typowy RPGowy crafting. Przerabiasz rudę na sztabki, sztabki na itemki, itemki na hajs i sławę w grze... 
@@ -108,4 +108,4 @@ tańczyć po całym magazynie (LWH - jeden z dwóch Warehouse'ów w Aresden, mam
 
 Ogarniemy to wszystko w kolejnych odcinkach. Ale najpierw, na rzecz powyższych usprawnień opracujmy:
 
->> Przeszukiwanie obrazu << 
+# >> Przeszukiwanie obrazu << 
