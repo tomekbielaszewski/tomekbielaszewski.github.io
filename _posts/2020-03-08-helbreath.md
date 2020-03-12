@@ -37,7 +37,7 @@ surowce na kowadło, kliknij przycisk, poczekaj 4sek i.. od nowa. I tak ~41'000 
 surowce (nie mamy) to daje nam to nakład ponad 70h ciągłego "grania". W praktyce zajmie to nawet 2-3 razy tyle. 
 To nie tylko małpia robota, to czysta głupota i szaleństwo robić to ręcznie.
 
-![](.../assets/post2/1_manu_open.png)
+![](assets/post2/1_manu_open.png)
 
 Potrzebuję maszynkę która zrobi to za mnie. Jak wspomniałem - wyszła "odświeżona" wersja gry w przeglądarce, więc stare
 makra trzeba by przynajmniej przerobić, żeby dalej spełniały swoje zadanie. Ale czemu miałbym w ogóle korzystać z gotowców?
@@ -46,7 +46,7 @@ Gdzie w tym zabawa? Zrobię to po swojemu!
 # Do roboty!
 Pierwszy przedmiot jaki wytworzę to `Super Coal`. Składa się on z trzech grudek `Coal`.
 
-![](.../assets/post2/2_manu_working.png)
+![](assets/post2/2_manu_working.png)
 
 Wstępnie mogę przyjąć bardzo śliskie założenia:
 - Okno ekwipunku jest zawsze, co do piksela, w tym samym miejscu.
