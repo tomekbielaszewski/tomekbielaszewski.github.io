@@ -1,9 +1,15 @@
-title: Grizz-Blog
+title: Grizwold's Blog
 description: "-- hack your way through the day --"
 author:
-  name: "Grizz"
+  name: "Grizwold"
   email: "tomekbielaszewski@gmail.com"
   url: "https://tomekbielaszewski.github.io/"
+
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_page_data:
+  sitemap: false
+tag_permalink_style: pretty
 
 google_analytics: UA-159875271-1
 
@@ -12,7 +18,7 @@ baseurl: /
 source: .
 destination: ./_site
 permalink: /:title
-paginate: 3
+paginate: 5
 paginate_path: /page/:num/
 
 defaults:
@@ -28,8 +34,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-tagging
+  - jekyll/tagging
 
 # Custom variables
-owner : "Grizz"
+owner : "Grizwold"
 year : "2020"
