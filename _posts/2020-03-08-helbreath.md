@@ -5,7 +5,6 @@ published: true
 comments: true
 ---
 
-# Słowem wstępu
 Wśród moich ziomków z dzieciństwa zawsze uchodziłem za tego który ma specyficzny gust do gier. Inni zachwycali się wspaniałymi
 widokami w Gothic 2, błyszczącymi samochodami w NFS Underground, a ja pisałem kolejne komendy w znalezionych na necie MUDach.
 Dlatego jak tylko sąsiad znalazł brzydką grę 2D w której można było grać z setkami innych graczy jednocześnie to od razu

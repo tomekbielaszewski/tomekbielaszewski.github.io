@@ -5,7 +5,6 @@ comments: true
 tags: english, java, everydayjob
 ---
 
-# One day I found a bug
 The other day I was working on some ecommerce system. In this part of the app I had to display a barcode in numeric format.
 The requested design contained something like the following:
 ```
