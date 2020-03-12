@@ -1,8 +1,9 @@
 ---
+author: Grizwold
 title: Java and string formatting
 published: true
 comments: true
-tags: english, java, everydayjob
+tags: english java everyday-job
 ---
 
 The other day I was working on some ecommerce system. In this part of the app I had to display a barcode in numeric format.
