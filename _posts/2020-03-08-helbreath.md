@@ -3,7 +3,7 @@ author: Grizwold
 title: Helbreath?
 published: true
 comments: true
-tags: polish helbreath robot java helbreath-bot automation
+tags: polish helbreath-automation-series
 ---
 
 Wśród moich ziomków z dzieciństwa zawsze uchodziłem za tego który ma specyficzny gust do gier. Inni zachwycali się wspaniałymi
