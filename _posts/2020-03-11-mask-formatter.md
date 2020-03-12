@@ -1,17 +1,17 @@
 ---
-title: Java and formatting strings
-published: false
+title: Java and string formatting
+published: true
 comments: true
 tags: english, java, everydayjob
 ---
 
 # One day I found a bug
 The other day I was working on some ecommerce system. In this part of the app I had to display a barcode in numeric format.
-The requested design contained something like:
+The requested design contained something like the following:
 ```
 1234 12345 12345 1234 1
 ```
-And I was simply returning a string with:
+but I was simply returning a string:
 ```
 1234123451234512341
 ```
