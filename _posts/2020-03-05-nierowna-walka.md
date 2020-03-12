@@ -59,4 +59,4 @@ Spróbuję czegoś nowego, czego chciałem spróbować od dawna. Powyższe przyk
 oszukać userscriptem w Tamper Monkey czy czymś jak Selenium Web Driver. A co z grami standalone? A co z grami przeglądarkowymi, 
 ale nie opartymi na drzewie DOM? Flash, Canvas, Native? Czas na mniej trywialne zadanie.
 
-# >> Napiszmy bota do Helbreath <<
+# [>> Napiszmy bota do Helbreath <<]({{ page.next.id }})

@@ -1,12 +1,11 @@
 ---
 author: Grizwold
 title: Helbreath?
-published: false
+published: true
 comments: true
 tags: polish helbreath robot java helbreath-bot automation
 ---
 
-# Słowem wstępu
 Wśród moich ziomków z dzieciństwa zawsze uchodziłem za tego który ma specyficzny gust do gier. Inni zachwycali się wspaniałymi
 widokami w Gothic 2, błyszczącymi samochodami w NFS Underground, a ja pisałem kolejne komendy w znalezionych na necie MUDach.
 Dlatego jak tylko sąsiad znalazł brzydką grę 2D w której można było grać z setkami innych graczy jednocześnie to od razu
@@ -26,8 +25,9 @@ i spotykasz elva? To bijesz elva. Chyba że on cie szybciej ubije to spieprzasz 
 Nostalgiczny powrót do HB wiąże się głównie z niedawnym wydaniem tej gry w formie przeglądarkowej. Wydał ją znany w 
 polskiej społeczności HB hacker Drajwer. Czemu hacker? Ten typ wydał Zestaw Małego Hackera i był zmorą małych prywatnych 
 serwerów. Ale nie o tym chciałem napisać.
-Po co w ogóle to wszystko? Otóż gra ta ma w sobie ten pewien mechanizm. Element który wywołuje u mnie reakcję o której pisałem  
-[wcześniej](2020-03-05-nierowna-walka.md). Jest to pewna nudna, powtarzalna czynność, która daje mi przewagę jeśli ją wypracuję.
+Po co w ogóle to wszystko? Otóż gra ta ma w sobie ten pewien mechanizm. Element który wywołuje u mnie reakcję o której 
+pisałem [wcześniej]({{ page.previous.id }}). Jest to pewna nudna, powtarzalna czynność, która daje mi przewagę jeśli ją 
+wypracuję.
 
 # Manu
 Manufacturing czyli typowy RPGowy crafting. Przerabiasz rudę na sztabki, sztabki na itemki, itemki na hajs i sławę w grze... 
@@ -37,12 +37,16 @@ surowce na kowadło, kliknij przycisk, poczekaj 4sek i.. od nowa. I tak ~41'000 
 surowce (nie mamy) to daje nam to nakład ponad 70h ciągłego "grania". W praktyce zajmie to nawet 2-3 razy tyle. 
 To nie tylko małpia robota, to czysta głupota i szaleństwo robić to ręcznie.
 
+![](assets/post2/1_manu_open.png)
+
 Potrzebuję maszynkę która zrobi to za mnie. Jak wspomniałem - wyszła "odświeżona" wersja gry w przeglądarce, więc stare
 makra trzeba by przynajmniej przerobić, żeby dalej spełniały swoje zadanie. Ale czemu miałbym w ogóle korzystać z gotowców?
 Gdzie w tym zabawa? Zrobię to po swojemu! 
 
 # Do roboty!
 Pierwszy przedmiot jaki wytworzę to `Super Coal`. Składa się on z trzech grudek `Coal`.
+
+![](assets/post2/2_manu_working.png)
 
 Wstępnie mogę przyjąć bardzo śliskie założenia:
 - Okno ekwipunku jest zawsze, co do piksela, w tym samym miejscu.
@@ -110,4 +114,4 @@ tańczyć po całym magazynie (LWH - jeden z dwóch Warehouse'ów w Aresden, mam
 
 Ogarniemy to wszystko w kolejnych odcinkach. Ale najpierw, na rzecz powyższych usprawnień opracujmy:
 
->> Przeszukiwanie obrazu << 
+# >> Przeszukiwanie obrazu << 
