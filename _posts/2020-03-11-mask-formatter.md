@@ -1,6 +1,6 @@
 ---
 author: Grizwold
-title: Java and string formatting
+title: Java and string formatting using mask
 published: true
 comments: true
 tags: english java everyday-job
