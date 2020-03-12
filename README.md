@@ -48,6 +48,10 @@ Replace `LOCATION_OF_YOUR_JEKYLL_BLOG` with the full path of your blog repositor
 
 *Note: In case you have set a `baseurl` different than `/` in `_config.yml`, go to `http://0.0.0.0:8000/BASEURL/` instead.*
 
+### Local page development
+
+`jekyll serve --watch --port 8091 --unpublished`
+
 ## Customizing
 
 ### Configuration variables
