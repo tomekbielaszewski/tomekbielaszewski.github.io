@@ -6,9 +6,10 @@ comments: true
 tags: polish helbreath-automation-series
 ---
 
-W poprzednim [wpisie]({{ page.previous.previous.id }}) o pisaniu bota do Helbreath uzyskaliśmy prostackie klikanie na ślepo
-w zahardkodowane punkty. Czas to zmienić. Stworzę tu prostą klasę do przeszukiwania obrazu ekranu. Załóżmy, że ma ona nam 
-podać listę punktów gdzie znajduje się szukany mniejszy obraz w układzie współrzędnych większego obrazu.
+W poprzednim [wpisie]({{ page.previous.previous.id }}) o pisaniu bota do gry Helbreath uzyskaliśmy prostackie klikanie na ślepo
+w zahardkodowane punkty. Czas to zmienić. Stworzę tu prostą klasę do przeszukiwania obrazu. Załóżmy, że mam znaleźć `Iron Ingot` w
+ekwipunku a następnie go przeciągnąć do okna Manufacturingu. Rozwiąże nam to klasa które może nam podać listę punktów 
+gdzie znajduje się szukany mniejszy obraz w układzie współrzędnych większego obrazu.
 
 ![](assets/post4/iron_ingot_finding.png)
 
@@ -67,7 +68,7 @@ innych pikseli w kolorze pierwszego piksela ikony
 szukana na czarnym ekranie)
 
 Poprawę widać od razu, ale coś mi tu śmierdzi. Jaki format obrazu pozwala na pobranie wszystkich punktów ekranu na podstawie
-koloru? Niestety żaden mi znany. Potrzebny jest tutaj preprocessing obrazu ekranu. Zamienię tutaj `BufferedImage` na 
+koloru? Niestety żaden mi znany. Potrzebny jest tutaj preprocessing obrazu. Przekonwertuję `BufferedImage` na 
 `Map<Integer, List<Point>>` gdzie Integer to zakodowany binarnie kolor (w takim formacie jest zwracany kolor z metody
 `BufferedImage::getRGB`).
 
@@ -87,7 +88,7 @@ która wynosi od `O(1)` do `O(log N)`.
 
 Ale to nam psuje wszystko co osiągnęliśmy w naszej wspaniałej optymalizacji, c'nie? Otóż nie drogi padawanie!
 
-Słowo klucz: preprocessing - daje nam to możliwość wielokrotnego, taniego wyszukiwania w raz przeliczonym obrazie.  
+Słowo klucz: preprocessing - daje nam to możliwość wielokrotnego, taniego wyszukiwania w już przeliczonym obrazie.  
 
 # Implementacja
 Po takim wytłumaczeniu napisanie kodu to już chyba formalność. Moja implementacja znajduje 
@@ -101,7 +102,7 @@ Zaimplementowane funkcjonalności które skutecznie zaciemniają kod to:
 nieregularnych ikon ze zmiennym tłem jak napisy wyświetlane na ekranie.
 - wizualne debugowanie które zapisuje serię obrazów z wizualizacją działania algorytmu - pokazuje jak odfiltrowywane były
 prawdopodobne lokalizacje ikony w kolejnych iteracjach algorytmu. Pomagało mi to znaleźć nieoptymalnie dobrane ikony, a do
-tego jest poprostu fajne.
+tego jest po prostu fajne.
 
 Jako przykład nieoptymalnego doboru wyszukiwanej ikony niech nam posłuży poniższe wywołanie algorytmu dla znalezienia
 lewego górnego rogu okna ekwipunku. Kolorem różowym są zaznaczone znalezione punkty które pasują do ikony w kolejnych 
