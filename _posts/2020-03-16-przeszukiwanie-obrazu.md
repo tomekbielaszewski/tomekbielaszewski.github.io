@@ -10,7 +10,7 @@ W poprzednim [wpisie]({{ page.previous.previous.id }}) o pisaniu bota do Helbrea
 w zahardkodowane punkty. Czas to zmienić. Stworzę tu prostą klasę do przeszukiwania obrazu ekranu. Załóżmy, że ma ona nam 
 podać listę punktów gdzie znajduje się szukany mniejszy obraz w układzie współrzędnych większego obrazu.
 
-[obrazek z wieloma mniejszymi prostokątami w wiekszym obrazie]
+![](assets/post4/iron_ingot_finding.png)
 
 A sygnatura tegoż będzie następująca: `List<Point> locate(BufferedImage screen, BufferedImage icon)`
 
