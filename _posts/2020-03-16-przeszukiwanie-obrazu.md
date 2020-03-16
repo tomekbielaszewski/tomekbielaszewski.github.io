@@ -1,7 +1,7 @@
 ---
 author: Grizwold
 title: Przeszukiwanie obrazu
-published: false
+published: true
 comments: true
 tags: polish helbreath-automation-series
 ---
