@@ -103,8 +103,12 @@ nieregularnych ikon ze zmiennym tłem jak napisy wyświetlane na ekranie.
 prawdopodobne lokalizacje ikony w kolejnych iteracjach algorytmu. Pomagało mi to znaleźć nieoptymalnie dobrane ikony, a do
 tego jest poprostu fajne.
 
-[Kilka obrazków debugowania]
+Jako przykład nieoptymalnego doboru wyszukiwanej ikony niech nam posłuży poniższe wywołanie algorytmu dla znalezienia
+lewego górnego rogu okna ekwipunku. Kolorem różowym są zaznaczone znalezione punkty które pasują do ikony w kolejnych 
+iteracjach algorytmu. Pierwszy (top left) piksel ikony jest czarny, tak jak 30% całego ekranu. Widać że na kolejnych 
+iteracjach odfiltrował czarne pole po prawej stronie. A na ostatnim kroku znalazł szukany wycinek obrazu.
+![](assets/post4/blogpost_bag_searching_nonoptimal_icon_final.png)
 
 W kolejnym odcinku użyję tego algorytmu w praktyce i przeimplementuję to co popełniłem we [wcześniejszym]({{ page.previous.previous.id }}) wpisie.
 
-# [>> Helbreath z rozpoznawaniem obrazu <<]({{ page.next.id }}) 
+# [>> Bot Helbreath z rozpoznawaniem obrazu <<]({{ page.next.id }}) 
