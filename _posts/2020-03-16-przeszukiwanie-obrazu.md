@@ -90,13 +90,13 @@ Ale to nam psuje wszystko co osiągnęliśmy w naszej wspaniałej optymalizacji,
 Słowo klucz: preprocessing - daje nam to możliwość wielokrotnego, taniego wyszukiwania w raz przeliczonym obrazie.  
 
 # Implementacja
-To takim wytłumaczeniu to chyba napisanie kodu to już formalność. Moja implementacja znajduje 
+Po takim wytłumaczeniu napisanie kodu to już chyba formalność. Moja implementacja znajduje 
 się [tutaj](https://github.com/tomekbielaszewski/screen-automation/blob/master/src/main/java/pl/grizwold/screenautomation/ImageLocator.java).
 
-I jak widać sygnatura rozbiła się na konstruktor: `ImageLocator(BufferedImage base)` i główną metodę `List<Point> locate(Icon icon)`
+Jak widać sygnatura rozbiła się na konstruktor: `ImageLocator(BufferedImage base)` i główną metodę `List<Point> locate(Icon icon)`
 
 Zaimplementowane funkcjonalności które skutecznie zaciemniają kod to:
-- gwiazda naszego odcinka: wyszukiwanie podanej ikony na bazowym obrazie
+- gwiazda naszego odcinka - wyszukiwanie podanej ikony na bazowym obrazie
 - ignorowanie pikseli na ikonie które są w kolorze maski (użyłem pięknego koloru magenta) - bardzo przydatne do wyszukiwania 
 nieregularnych ikon ze zmiennym tłem jak napisy wyświetlane na ekranie.
 - wizualne debugowanie które zapisuje serię obrazów z wizualizacją działania algorytmu - pokazuje jak odfiltrowywane były
