@@ -114,4 +114,4 @@ tańczyć po całym magazynie (LWH - jeden z dwóch Warehouse'ów w Aresden, mam
 
 Ogarniemy to wszystko w kolejnych odcinkach. Ale najpierw, na rzecz powyższych usprawnień opracujmy:
 
-# >> Przeszukiwanie obrazu << 
+# [>> Przeszukiwanie obrazu <<]({{ page.next.next.id }}) 
