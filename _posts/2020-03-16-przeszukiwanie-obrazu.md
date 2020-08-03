@@ -92,7 +92,7 @@ Słowo klucz: preprocessing - daje nam to możliwość wielokrotnego, taniego wy
 
 # Implementacja
 Po takim wytłumaczeniu napisanie kodu to już chyba formalność. Moja implementacja znajduje 
-się [tutaj](https://github.com/tomekbielaszewski/screen-automation/blob/master/src/main/java/pl/grizwold/screenautomation/ImageLocator.java).
+się [tutaj](https://github.com/tomekbielaszewski/screen-automation/blob/master/src/main/java/pl/grizwold/screenautomation/processing/ColorMapImageLocator.java).
 
 Jak widać sygnatura rozbiła się na konstruktor: `ImageLocator(BufferedImage base)` i główną metodę `List<Point> locate(Icon icon)`
 
