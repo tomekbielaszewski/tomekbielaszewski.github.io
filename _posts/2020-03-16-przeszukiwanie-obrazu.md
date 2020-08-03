@@ -1,6 +1,6 @@
 ---
 author: Grizwold
-title: Przeszukiwanie obrazu
+title: HAS#3 Przeszukiwanie obrazu
 published: true
 comments: true
 tags: polish helbreath-automation-series

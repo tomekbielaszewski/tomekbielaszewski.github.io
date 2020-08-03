@@ -1,6 +1,6 @@
 ---
 author: Grizwold
-title: Helbreath?
+title: HAS#2 Helbreath?
 published: true
 comments: true
 tags: polish helbreath-automation-series
