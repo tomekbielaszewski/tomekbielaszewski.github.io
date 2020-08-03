@@ -113,3 +113,4 @@ iteracjach odfiltrował czarne pole po prawej stronie. A na ostatnim kroku znala
 W kolejnym odcinku użyję tego algorytmu w praktyce i przeimplementuję to co popełniłem we [wcześniejszym]({{ page.previous.previous.id }}) wpisie.
 
 # [>> Bot Helbreath z rozpoznawaniem obrazu <<]({{ page.next.id }}) 
+## Wpis ten jest częścią serii Helbreath Automation Series - w skrócie <a href="/tags#helbreath-automation-series">#HAS</a>

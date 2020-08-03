@@ -1,6 +1,6 @@
 ---
 author: Grizwold
-title: Nierówna walka
+title: HAS#1 Nierówna walka
 published: true
 comments: true
 tags: polish helbreath-automation-series
@@ -60,3 +60,4 @@ oszukać userscriptem w Tamper Monkey czy czymś jak Selenium Web Driver. A co z
 ale nie opartymi na drzewie DOM? Flash, Canvas, Native? Czas na mniej trywialne zadanie.
 
 # [>> Napiszmy bota do Helbreath <<]({{ page.next.id }})
+## Wpis ten jest częścią serii Helbreath Automation Series - w skrócie <a href="/tags#helbreath-automation-series">#HAS</a>

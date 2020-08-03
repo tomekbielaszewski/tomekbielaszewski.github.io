@@ -115,3 +115,4 @@ tańczyć po całym magazynie (LWH - jeden z dwóch Warehouse'ów w Aresden, mam
 Ogarniemy to wszystko w kolejnych odcinkach. Ale najpierw, na rzecz powyższych usprawnień opracujmy:
 
 # [>> Przeszukiwanie obrazu <<]({{ page.next.next.id }}) 
+## Wpis ten jest częścią serii Helbreath Automation Series - w skrócie <a href="/tags#helbreath-automation-series">#HAS</a>
