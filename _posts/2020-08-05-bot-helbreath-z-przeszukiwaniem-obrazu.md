@@ -1,7 +1,7 @@
 ---
 author: Grizwold
 title: HAS#4 Prosty bot z przeszukiwaniem obrazu
-published: false
+published: true
 comments: true
 tags: polish helbreath-automation-series
 ---

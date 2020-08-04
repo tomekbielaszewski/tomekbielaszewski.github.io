@@ -1,7 +1,7 @@
 ---
 author: Grizwold
 title: HAS#5 W poszukiwaniu najlepszego algorytmu
-published: false
+published: true
 comments: true
 tags: polish helbreath-automation-series
 ---
