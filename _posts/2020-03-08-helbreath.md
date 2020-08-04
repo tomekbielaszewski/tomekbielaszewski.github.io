@@ -26,8 +26,8 @@ Nostalgiczny powrót do HB wiąże się głównie z niedawnym wydaniem tej gry w
 polskiej społeczności HB hacker Drajwer. Czemu hacker? Ten typ wydał Zestaw Małego Hackera i był zmorą małych prywatnych 
 serwerów. Ale nie o tym chciałem napisać.
 Po co w ogóle to wszystko? Otóż gra ta ma w sobie ten pewien mechanizm. Element który wywołuje u mnie reakcję o której 
-pisałem [wcześniej]({{ page.previous.id }}). Jest to pewna nudna, powtarzalna czynność, która daje mi przewagę jeśli ją 
-wypracuję.
+pisałem [wcześniej]({% link _posts/2020-03-05-nierowna-walka.md %}). Jest to pewna nudna, powtarzalna czynność, która 
+daje mi przewagę jeśli ją wypracuję.
 
 # Manu
 Manufacturing czyli typowy RPGowy crafting. Przerabiasz rudę na sztabki, sztabki na itemki, itemki na hajs i sławę w grze... 
@@ -114,5 +114,5 @@ tańczyć po całym magazynie (LWH - jeden z dwóch Warehouse'ów w Aresden, mam
 
 Ogarniemy to wszystko w kolejnych odcinkach. Ale najpierw, na rzecz powyższych usprawnień opracujmy:
 
-# [>> Przeszukiwanie obrazu <<]({{ page.next.next.id }}) 
+# [>> Przeszukiwanie obrazu <<]({% link _posts/2020-03-16-przeszukiwanie-obrazu.md %}) 
 ## Wpis ten jest częścią serii Helbreath Automation Series - w skrócie <a href="/tags#helbreath-automation-series">#HAS</a>

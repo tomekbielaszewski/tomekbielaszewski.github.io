@@ -18,7 +18,7 @@ lub kiedy odpaliłem go na AirMacu który domyślnie ma ustawioną nieznacznie c
 Ale po kolei. Opiszę tutaj co sprawdziłem i czemu to się nie sprawdziło.
 
 Na pierwszy strzał idzie [algorytm](https://github.com/tomekbielaszewski/screen-automation/blob/master/src/main/java/pl/grizwold/screenautomation/processing/ColorMapImageLocator.java) 
-który już [opisałem]({{ page.previous.previous.id }}). Polegał na odwróceniu zależności "współrzędne pixela" vs "kolor pixela".
+który już [opisałem]({% link _posts/2020-03-16-przeszukiwanie-obrazu.md %}). Polegał na odwróceniu zależności "współrzędne pixela" vs "kolor pixela".
 Przez co po kosztownym preprocessingu pozwalał na super szybkie wyszukiwanie podanych mu części obrazu. Jest to świetne
 rozwiązanie i nadal uważam że pozwala na najszybszy sposób wielokrotnego przeszukiwania statycznego obrazu. Ale praktyka
 mi mówi co innego. W kodzie bota bardzo często czekam na obecność zadanej ikony: może to być czekanie na zakończenie 
@@ -39,10 +39,11 @@ Dodatkowo w tym algorytmie nie dostanę jednoznacznej odpowiedzi, czy dana ikona
 jednoznaczne rozwiązanie.
 
 Na koniec zostawiłem to co początkowo nazwałem najbardziej naiwnym i słabym algorytmem który mi wpadł do głowy - zwykłe
-wyszukiwanie pixel-by-pixel. Odrzuciłem go z miejsca jeszcze przed zaimplementowaniem algorytmu color-map bo uznałem że 
-będzie miał zbyt dużą złożoność. Jednak okazuje się, że jest najszybszy. Widocznie najłatwiej jest go zoptymalizować w JIT.
-Dodatkowo pozwolana na banalną implementację tolerancji kolorów dla ekranów z `f.lux` lub ze zmienioną natywnie paletą
-kolorów jak AirMac - wystarczy założyć maksymalną odległość między dwoma pixelami RGB, traktując składowe jak współrzedne 3D.
+wyszukiwanie [pixel-by-pixel](https://github.com/tomekbielaszewski/screen-automation/blob/master/src/main/java/pl/grizwold/screenautomation/processing/PixelByPixelImageLocator.java). 
+Odrzuciłem go z miejsca jeszcze przed zaimplementowaniem algorytmu color-map bo uznałem że będzie miał zbyt dużą złożoność. 
+Jednak okazuje się, że jest najszybszy. Widocznie najłatwiej jest go zoptymalizować w JIT. Dodatkowo pozwolana na banalną 
+implementację tolerancji kolorów dla ekranów z `f.lux` lub ze zmienioną natywnie paletąkolorów jak AirMac - wystarczy 
+założyć maksymalną odległość między dwoma pixelami RGB, traktując składowe jak współrzedne 3D.
 Tak wiem, że to tak samo niejednoznaczne jak wyznaczanie współczynnika we wcześniejszym algorytmie, ale jest mi go o wiele 
 łatwiej zrozumieć i wyznaczyć go na czuja.
 

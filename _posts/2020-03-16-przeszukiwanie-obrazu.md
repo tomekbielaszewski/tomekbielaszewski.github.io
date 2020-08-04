@@ -6,7 +6,7 @@ comments: true
 tags: polish helbreath-automation-series
 ---
 
-W poprzednim [wpisie]({{ page.previous.previous.id }}) o pisaniu bota do gry Helbreath uzyskaliśmy prostackie klikanie na ślepo
+W poprzednim [wpisie]({% link _posts/2020-03-08-helbreath.md %}) o pisaniu bota do gry Helbreath uzyskaliśmy prostackie klikanie na ślepo
 w zahardkodowane punkty. Czas to zmienić. Stworzę tu prostą klasę do przeszukiwania obrazu. Załóżmy, że mam znaleźć `Iron Ingot` w
 ekwipunku a następnie go przeciągnąć do okna Manufacturingu. Rozwiąże nam to klasa które może nam podać listę punktów 
 gdzie znajduje się szukany mniejszy obraz w układzie współrzędnych większego obrazu.
@@ -110,7 +110,7 @@ iteracjach algorytmu. Pierwszy (top left) piksel ikony jest czarny, tak jak 30% 
 iteracjach odfiltrował czarne pole po prawej stronie. A na ostatnim kroku znalazł szukany wycinek obrazu.
 ![](assets/post4/blogpost_bag_searching_nonoptimal_icon_final.png)
 
-W kolejnym odcinku użyję tego algorytmu w praktyce i przeimplementuję to co popełniłem we [wcześniejszym]({{ page.previous.previous.id }}) wpisie.
+W kolejnym odcinku użyję tego algorytmu w praktyce i przeimplementuję to co popełniłem we [wcześniejszym]({% link _posts/2020-03-08-helbreath.md %}) wpisie.
 
-# [>> Bot Helbreath z rozpoznawaniem obrazu <<]({{ page.next.id }}) 
+# [>> Bot Helbreath z rozpoznawaniem obrazu <<]({% link _posts/2020-08-05-bot-helbreath-z-przeszukiwaniem-obrazu.md %}) 
 ## Wpis ten jest częścią serii Helbreath Automation Series - w skrócie <a href="/tags#helbreath-automation-series">#HAS</a>
