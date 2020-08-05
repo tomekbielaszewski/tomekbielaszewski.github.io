@@ -81,7 +81,7 @@ private boolean visible(BufferedImage icon, BufferedImage screen) {
 Wiem wiem... jeśli ikona się nigdy nie pojawi to appka się zawiesi i nigdy nasz bot nie zakończy swojej pracy. Ale na 
 tym etapie - prostota... prostota... prostota...! Kolejna śliska sprawa to tworzenie instancji naszego algorytmu wyszukiwania
 obrazu za każdym przekręceniem się pętli oczekiwania na daną ikonę. To jest między innymi powód dlaczego piszę ten wpis 
-niemal pół roku później. Ale to już omówię w kolejnym [wpisie]({% link _posts/2020-08-10-poszukiwanie-najlepszego-algorytmu.md %}).
+niemal pół roku później. Ale to już omówię w kolejnym [wpisie]({{ page.next.id }}) .
 Dwie pozostałe metody naszej podstawowej trójcy są już bardzo proste bo mocno bazujące na tym co nam daje algorytm przeszukiwania.
 
 Teraz jedynie zostało odpowiednio dobrać ikony któych szukamy i TA DA! Super prosty bot działa!
@@ -90,5 +90,5 @@ Teraz jedynie zostało odpowiednio dobrać ikony któych szukamy i TA DA! Super 
 
 Ale nad algorytmem musimy nadal popracować. I rozpocząć...
 
-# [>> ...poszukiwanie najlepszego algorytmu <<]({% link _posts/2020-08-10-poszukiwanie-najlepszego-algorytmu.md %}) 
+# [>> ...poszukiwanie najlepszego algorytmu <<]({{ page.next.id }}) 
 ## Wpis ten jest częścią serii Helbreath Automation Series - w skrócie <a href="/tags#helbreath-automation-series">#HAS</a>
