@@ -5,11 +5,15 @@
 @import "rouge-base16-dark";
 @import "default_colors";
 
-$body-background: $cod-grey !default;
+$banner-background: #2B2B2B !default;
+$body-background: #323232 !default;
 $body-foreground: $gallery !default;
-$header: $conifer !default;
+$header: #CB7731 !default;
+$link: #6D9CBE !default;
+$separator: #707D95 !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $dove-grey !default;
+$intellij-string: #6A8759 !default;
 
 body {
   margin: 0;
@@ -29,7 +33,6 @@ body {
   margin: 0 auto;
 }
 
-
 section {
   display: block;
   margin: 0 0 20px 0;
@@ -40,18 +43,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 li {
-  line-height: 1.4 ;
+  line-height: 1.4;
 }
 
-/* Header, <header>
+/*
+   Header, <header>
    header   - container
    h1       - project name
    h2       - project description
 */
 
 header {
-  background: rgba(0, 0, 0, 0.1);
-  border-bottom: 1px dashed $conifer; //header;
+  background: $banner-background;
+  border-bottom: 1px dashed $separator;
   padding: 20px;
   margin: 0 0 40px 0;
 }
@@ -70,11 +74,11 @@ header h1 {
   margin: 0;
   text-align: center;
   font-weight: bold;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $conifer;//$header;
+  font-family: "Segoe UI", Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  color: $header;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
+  0 0 5px rgba(181, 232, 83, 0.1),
+  0 0 10px rgba(181, 232, 83, 0.1);
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
 }
@@ -85,25 +89,32 @@ header h2 {
   color: #666;
 }
 
-/* Main Content
+/*
+   Main Content
 */
 
 #main_content {
   width: 100%;
   -webkit-font-smoothing: antialiased;
 }
+
 section img {
   max-width: 100%
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: "Segoe UI", Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: $header;
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
+  0 0 5px rgba(181, 232, 83, 0.1),
+  0 0 10px rgba(181, 232, 83, 0.1);
+}
+
+.article-title {
+  color: $header;
+  text-decoration: none;
 }
 
 #main_content h1 {
@@ -140,8 +151,8 @@ dt {
   font-weight: bold;
 }
 
-ul li {
-  list-style-image:url('../assets/bullet.png');
+.article-list {
+  list-style-image: url('../assets/bullet2.png');
 }
 
 blockquote {
@@ -155,7 +166,7 @@ pre {
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 10px;
   font-size: 16px;
-  color: #b5e853;
+  color: $separator;
   border-radius: 2px;
   text-wrap: normal;
   overflow: auto;
@@ -163,7 +174,7 @@ pre {
 }
 
 code.highlighter-rouge {
-  background: rgba(0,0,0,0.9);
+  background: rgba(0, 0, 0, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 0px 3px;
   margin: 0px -3px;
@@ -178,7 +189,7 @@ table {
 
 th {
   text-align: left;
-  border-bottom: 1px dashed #b5e853;
+  border-bottom: 1px dashed $separator;
   padding: 5px 10px;
 }
 
@@ -189,11 +200,12 @@ td {
 hr {
   height: 0;
   border: 0;
-  border-bottom: 1px dashed #b5e853;
-  color: #b5e853;
+  border-bottom: 1px dashed $separator;
+  color: $separator;
 }
 
-/* Buttons
+/*
+   Buttons
 */
 
 .btn {
@@ -230,13 +242,13 @@ hr {
   background: url("../images/blacktocat.png") 0 0 no-repeat;
 }
 
-/* Links
+/*
+   Links
    a, a:hover, a:visited
 */
 
 a {
-  color: #63c0f5;
-  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+  color: $link;
 }
 
 a:active, a:focus {
@@ -248,16 +260,16 @@ a:active, a:focus {
 /* Clearfix */
 
 .cf:before, .cf:after {
-  content:"";
-  display:table;
+  content: "";
+  display: table;
 }
 
 .cf:after {
-  clear:both;
+  clear: both;
 }
 
 .cf {
-  zoom:1;
+  zoom: 1;
 }
 
 /* Make footer stick to bottom */
@@ -270,4 +282,8 @@ a:active, a:focus {
 
 #wrapper {
   min-height: calc(100vh - 100px);
+}
+
+.intellij-text {
+  color: $intellij-string;
 }

@@ -4,11 +4,15 @@ layout: default
 
 <ul>
     {% for post in paginator.posts %}
-      <li>
-          <h2><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h2>
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-          <p>{{ post.content | strip_html | truncatewords:50 }}</p>
-          <p><a href="{{ post.url | prepend: site.author.url | replace: '//', '/' | replace: 'https:/', 'https://'}}#disqus_thread">Comments</a></p>
-      </li>
+    <li class="article-list">
+        <h2><a class="article-title" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h2>
+        <div>
+            Date "<span class="intellij-text"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></span>"
+        </div>
+        <p>{{ post.content | strip_html | truncatewords:50 }}</p>
+        <p>
+            <a href="{{ post.url | prepend: site.author.url | replace: '//', '/' | replace: 'https:/', 'https://'}}#disqus_thread">Comments</a>
+        </p>
+    </li>
     {% endfor %}
 </ul>

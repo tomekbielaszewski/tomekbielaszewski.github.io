@@ -4,7 +4,9 @@ layout: default
 
 <article>
   <h2>{{ page.title }}</h2>
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
+  <div>
+    Date "<span class="intellij-text"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time></span>"
+  </div>
   {{ content }}
 </article>
 <div id="post-comments">
