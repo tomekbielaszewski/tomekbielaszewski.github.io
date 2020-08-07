@@ -13,13 +13,11 @@ linii komend (bo o tym tu mówimy).
 Gita możemy używać za pomocą aplikacji `git` i przykładowe wywołanie będzie wyglądało następująco `git help`
 Wyświetli to skrócony tekst helpa gita. 
 
-! screenshot z helpem gita
+![](assets/2020-08-15-jak-napisac-cli-do-bota/git-help.png)
 
 Mamy tu nazwę aplikacji (nazwa pliku binarnego) `git` jak i podkomendę `help` 
 wyświetlającą tekst helpa. Ta podkomenda może przyjmować dodatkowe przełączniki jak na przykład `git help -a` który 
 wyświetli pełną treść helpa ze wszystkimi podkomendami. 
-
-! screenshot z pełnym helpem gita
 
 Przełączniki mogą także przyjmować swoje parametry wejściowe jak
 na przykład `git commit -m "my sweet commit message"` gdzie możemy zdefiniować opis swojego commita.
@@ -55,7 +53,7 @@ W aplikacjach Java parametry wejściowe aplikacji podaje się po podaniu ścież
 
 Kiedy w taki sposób uruchomimy wykonywalny plik JAR to w metodzie `main` otrzymamy tablicę `args` z taką zawartością:
 
-! screenshot z debugera
+![](assets/2020-08-15-jak-napisac-cli-do-bota/parameters.png)
 
 Jak widać każdy kolejny parametr oddzielony spacją ląduje w innym elemencie tablicy z wyjątkiem parametru podanego w 
 cudzysłowie, gdzie spacja nie spowodowała rozdzielenia go na 2 parametry. Oczywiście możemy zinterpretować je ręcznie,
