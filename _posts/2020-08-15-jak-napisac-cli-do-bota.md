@@ -6,7 +6,7 @@ comments: true
 tags: polish helbreath-automation-series
 ---
 
-Dzisiaj trochę z innej beczki i troche mało bot-owato. Mianowicie - jak zaimplementować CLI dla swojej aplikacji? Słowem 
+Dzisiaj trochę z innej beczki i troche mniej bot-owato. Mianowicie - jak zaimplementować CLI dla swojej aplikacji? Słowem 
 (lub kilkoma) wstępu ogarnijmy czym jest CLI - Command Line Interfejs. Weźmy na przykład takiego Gita i obsługę tegoż z 
 linii komend (bo o tym tu mówimy).
 
@@ -107,9 +107,9 @@ klasę z parametrami:
 ```java
 @Parameters(commandNames = {"manu"})
 public class ManufacturingCommand {
-    @Parameter(names = {"item", "-item"}, required = true)
+    @Parameter(names = {"--item"}, required = true)
     public String item;
-    @Parameter(names = {"amount", "-amount"})
+    @Parameter(names = {"--amount"})
     public int amount = -1;
 }
 ```
@@ -184,7 +184,7 @@ TADA! I mamy wygodny sposób na stworzenie dosyć zaawansowanego CLI dla bota cz
 Mimo, że opisałem tutaj tworzenie takowego interfejsu za pomocą biblioteki `JCommander` z którą jestem dosyć mocno zaznajomiony
 to jednak po lekturze dokumentacji `picocli` jestem zmuszony stwierdzić że pojedynek `JCommander` vs. `picocli` wygrywa
 młodszy zawodnik. `picocli` został stworzony wzorując się na `JCommander`, ale brał pod uwagę takie nowoczesne narzędzia 
-jak chociażby GraalVM, dzięki czemu pozwala na stworzenie wydajnego, natywnego obrazu aplikacji, który uruchamia się jak każda
+jak chociażby `GraalVM`, dzięki czemu pozwala na stworzenie wydajnego, natywnego obrazu aplikacji, który uruchamia się jak każda
 aplikacja standalone - czyli nie bedzie wymagana do tego maszyna javy. 
 
 `java -jar helgame-bot.jar manu --item "super coal"` staje się -> `helgame-bot manu --item "super coal"`
