@@ -11,7 +11,7 @@ layout: default
         </div>
         <p>{{ post.content | strip_html | truncatewords:50 }} <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">[read more...]</a></p>
         <p>
-            <a href="{{ post.url | prepend: site.author.url | replace: '//', '/' | replace: 'https:/', 'https://'}}#disqus_thread">Comments</a>
+            <a href="{{ post.url | prepend: site.author.url | replace: '//', '/' | replace: 'https:/', 'https://'}}#disqus_thread" data-disqus-identifier="{{ post.url }}">Comments</a>
         </p>
     </li>
     {% endfor %}
