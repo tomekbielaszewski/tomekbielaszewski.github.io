@@ -190,5 +190,5 @@ aplikacja standalone - czyli nie bedzie wymagana do tego maszyna javy.
 Następnie zastanowimy się jak zamodelować wsparcie dla tworzenia sporej bazy różnych przedmiotów, czyli będziemy rozszerzać 
 bota do manu o kolejne itemki!
  
-# [>> Struktury drzewiaste a manufacturing? <<]({{ page.next.id }}) 
+# [>> Co ma wspólnego manufacturing z drzewami? <<]({{ page.next.id }}) 
 ## Wpis ten jest częścią serii Helbreath Automation Series - w skrócie <a href="/tags#helbreath-automation-series">#HAS</a>

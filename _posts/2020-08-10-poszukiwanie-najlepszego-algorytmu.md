@@ -33,9 +33,9 @@ Użyłem template matchingu z metodą CV_TM_CCORR_NORMED. Co na wejściu akceptu
 wyniku macierz współczynników korelacji. Na koniec zostaje jedynie znaleźć maximum macierzy i jest znaleziona lokalizacja ikony.
 Niestety ze względu na kosztowny preprocessing (zamiana kolorowego screenshota na czarno-biały), jeszcze bardziej 
 kosztowne obliczenia ([template matching](https://docs.opencv.org/2.4/modules/imgproc/doc/object_detection.html)) i dosyć 
-tanie wyszukiwanie maximum macierzy - daje to sumaryczne najbardziej posysający algorytm jakie próbowałem.
+tanie wyszukiwanie maximum macierzy - daje to sumaryczne najbardziej posysający algorytm jaki próbowałem.
 Dodatkowo w tym algorytmie nie dostanę jednoznacznej odpowiedzi, czy dana ikona znajduje sie na ekranie czy nie. Chyba,
-że bym poexperymentował i metodą prób i błędów wyznaczył minimalną wartość maximum macierzy, ale nie uznaję tego za faktycznie
+że bym poeksperymentował i metodą prób i błędów wyznaczył minimalną wartość maximum macierzy, ale nie uznaję tego za faktycznie
 jednoznaczne rozwiązanie.
 
 Na koniec zostawiłem to co początkowo nazwałem najbardziej naiwnym i słabym algorytmem który mi wpadł do głowy - zwykłe

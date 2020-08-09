@@ -1,6 +1,6 @@
 ---
 author: Grizwold
-title: tutaj tytul jakis
+title: HAS#7 Co ma wspólnego manufacturing z drzewami?
 published: false
 comments: true
 tags: polish helbreath-automation-series
