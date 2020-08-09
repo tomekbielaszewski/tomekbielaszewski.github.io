@@ -1,7 +1,7 @@
 <header>
     {% capture terminal_path %}{% assign term = page.url | split: "." | first %}{% if term == '/' %}~{% else %}~{{ term }}{% endif %}{% endcapture %}
     <div>
-        <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">
+        <a class="header-title" href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">
         {% assign owner_first_name = site.owner | split: " " %}
         <h1>{{ owner_first_name[0] | downcase }}@blog: {{ terminal_path }}$</h1>
         </a>

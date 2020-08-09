@@ -4,16 +4,18 @@
 
 @import "rouge-base16-dark";
 @import "default_colors";
+@import "intellij_colors";
 
 $banner-background: #2B2B2B !default;
 $body-background: #323232 !default;
 $body-foreground: $gallery !default;
-$header: #CB7731 !default;
+$header: $intellij-annotation !default;
+$article-title: $intellij-class !default;
+$heading: $intellij-class !default;
 $link: #6D9CBE !default;
 $separator: #707D95 !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $dove-grey !default;
-$intellij-string: #6A8759 !default;
 
 body {
   margin: 0;
@@ -53,34 +55,42 @@ li {
    h2       - project description
 */
 
-header {
-  background: $banner-background;
-  border-bottom: 1px dashed $separator;
-  padding: 20px;
-  margin: 0 0 40px 0;
+.header-title {
+  text-decoration-line: none;
 }
 
 .header-links {
   text-align: center;
 }
 
-.header-link {
-  display: inline;
+.header-links a {
+  text-decoration-line: none;
 }
 
-header h1 {
-  font-size: 24px;
-  line-height: 1.5;
-  margin: 0;
-  text-align: center;
-  font-weight: bold;
-  font-family: "Segoe UI", Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $header;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-  0 0 5px rgba(181, 232, 83, 0.1),
-  0 0 10px rgba(181, 232, 83, 0.1);
-  letter-spacing: -1px;
-  -webkit-font-smoothing: antialiased;
+.header-link {
+  display: inline;
+  padding-right: 5px;
+}
+
+header {
+  background: $banner-background;
+  border-bottom: 1px dashed $separator;
+  padding: 20px;
+  margin: 0 0 40px 0;
+  h1 {
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Segoe UI", Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    color: $header;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(181, 232, 83, 0.1),
+    0 0 10px rgba(181, 232, 83, 0.1);
+    letter-spacing: -1px;
+    -webkit-font-smoothing: antialiased;
+  }
 }
 
 header h2 {
@@ -105,7 +115,7 @@ section img {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: "Segoe UI", Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $header;
+  color: $heading;
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
   0 0 5px rgba(181, 232, 83, 0.1),
@@ -113,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .article-title {
-  color: $header;
+  color: $article-title;
   text-decoration: none;
 }
 
@@ -152,7 +162,7 @@ dt {
 }
 
 .article-list {
-  list-style-image: url('../assets/bullet2.png');
+  list-style-image: url('../assets/bullet3.png');
 }
 
 blockquote {
