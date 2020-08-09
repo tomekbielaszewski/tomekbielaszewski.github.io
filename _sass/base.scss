@@ -6,8 +6,8 @@
 @import "default_colors";
 @import "intellij_colors";
 
-$banner-background: #2B2B2B !default;
-$body-background: #323232 !default;
+$banner-background: $intellij-background !default;
+$body-background: $intellij-cursor-background !default;
 $body-foreground: $gallery !default;
 $header: $intellij-annotation !default;
 $article-title: $intellij-class !default;
@@ -184,11 +184,10 @@ pre {
 }
 
 code.highlighter-rouge {
-  background: rgba(0, 0, 0, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 0px 3px;
-  margin: 0px -3px;
-  color: #ce91c3;
+  background: $intellij-background;
+  border: 1px solid $intellij-background;
+  padding: 3px 3px;
+  color: $intellij-comment;
   border-radius: 2px;
 }
 
