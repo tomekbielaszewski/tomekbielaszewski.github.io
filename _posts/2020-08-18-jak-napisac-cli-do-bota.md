@@ -1,7 +1,7 @@
 ---
 author: Grizwold
 title: HAS#6 Jak zaimplementować interfejs CLI dla swojej aplikacji
-published: false
+published: true
 comments: true
 tags: polish helbreath-automation-series
 ---
