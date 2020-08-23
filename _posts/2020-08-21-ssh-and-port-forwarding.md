@@ -1,7 +1,7 @@
 ---
 author: Grizwold
 title: SSH, port forwarding and when to use it?
-published: false
+published: true
 comments: true
 tags: english linux everyday-job
 ---
