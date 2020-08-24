@@ -49,7 +49,7 @@ my-apps-db=> SELECT * FROM user
 my-apps-db-> ;
     name   | role  | pass
 -----------+-------+------
- griwzwold | ADMIN | dupa 
+ grizwold | ADMIN | dupa 
 ```
 
 but! You don't have `psql` on `B2` bastion! So let's use local port forwarding, shall we?
@@ -84,7 +84,7 @@ my-apps-db=> SELECT * FROM user
 my-apps-db-> ;
     name   | role  | pass
 -----------+-------+------
- griwzwold | ADMIN | dupa 
+ grizwold | ADMIN | dupa 
 ```
 
 What's more! You can even forward the local forwarded port further onto you local machine and use the `App` on your local machine.
