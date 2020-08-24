@@ -127,6 +127,14 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+.post-list-element-bottom {
+  display: inline;
+}
+
+.post-list-element-tags {
+  float: right;
+}
+
 #main_content h1 {
   font-size: 30px;
 }
